@@ -1,0 +1,18 @@
+
+<!-- put number of the columns into your template
+then put each row of your table as array with elements  -->
+
+
+
+
+  <table style='border: 1px solid black; margin: 0px auto; border-collapse: collapse;'>
+    <% content.each do |row| %>
+    <tr>
+      <% (0..columns-1).each do |i| %>
+      <td style='border: 1px solid black; padding: 15px; border-collapse: collapse;'>
+        <%= row[i] %>
+      </td>
+      <% end %>
+    </tr>
+    <% end %>
+  </table>

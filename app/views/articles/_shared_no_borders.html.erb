@@ -1,0 +1,12 @@
+
+<table style='margin: 0px auto;'>
+  <% content.each do |row| %>
+  <tr>
+    <% (0..columns-1).each do |i| %>
+    <td style='padding: 15px;'>
+      <%= row[i] %>
+    </td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
